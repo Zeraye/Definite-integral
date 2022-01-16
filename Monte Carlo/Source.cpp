@@ -26,11 +26,7 @@ double draw(double a, double b, double max, int n)
             if (rndx > b) rndx = rndx - a;
             rndy = double(rand() % int(max + 0.00001)) + fabs((double(rand() % 10000)) / 10000 - fabs(max - int(max + 0.00001)));
             //printf("x=%lf\ty=%lf\n", rndx, rndy);
-            if (rndy > func(rndx)) {}
-            else
-            {
-                f++;
-            }
+            if (!(rndy > func(rndx))) f++;
 
         }
     }
@@ -42,11 +38,7 @@ double draw(double a, double b, double max, int n)
             if (rndx > fabs(a)) rndx = rndx - fabs(b);
             rndx = -rndx;
             rndy = double(rand() % int(max + 0.00001)) + fabs((double(rand() % 10000)) / 10000 - fabs(max - int(max + 0.00001)));
-            if (rndy > func(rndx)) {}
-            else
-            {
-                f++;
-            }
+            if (!(rndy > func(rndx))) f++;
         }
     }
 
@@ -86,11 +78,7 @@ void grap(double a, double b, double max, int z, double n)
             rndx = double(rand() % int(b + 0.00001)) + a + fabs((double(rand() % 10000)) / 10000 - fabs(b - int(b + 0.00001)));
             if (rndx > b) rndx = rndx - a;
             rndy = double(rand() % int(max + 0.00001)) + fabs((double(rand() % 10000)) / 10000 - fabs(max - int(max + 0.00001)));
-            if (rndy > func(rndx)) {}
-            else
-            {
-                circle(rndx * z + 100, -rndy * z + 800, 2);
-            }
+            if (!(rndy > func(rndx))) circle(rndx * z + 100, -rndy * z + 800, 2);
 
         }
     }
@@ -102,11 +90,7 @@ void grap(double a, double b, double max, int z, double n)
             if (rndx > fabs(a)) rndx = rndx - fabs(b);
             rndx = -rndx;
             rndy = double(rand() % int(max + 0.00001)) + fabs((double(rand() % 10000)) / 10000 - fabs(max - int(max + 0.00001)));
-            if (rndy > func(rndx)) {}
-            else
-            {
-                circle(rndx * z + 100, -rndy * z + 800, 2);
-            }
+            if (!(rndy > func(rndx))) circle(rndx * z + 100, -rndy * z + 800, 2);
         }
     }
 
