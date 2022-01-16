@@ -1,0 +1,3 @@
+﻿  Source.cpp
+D:\projekty\Monte Carlo\Source.cpp(20,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Monte Carlo.vcxproj -> D:\projekty\Monte Carlo\Debug\Monte Carlo.exe
